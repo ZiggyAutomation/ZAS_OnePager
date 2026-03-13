@@ -354,12 +354,23 @@
     }
 
     .venture-badge strong { color: var(--text); }
-
+    /*
     .logo-stack {
       position: absolute;
       inset: 95px 30px 220px;
       display: grid;
       place-items: center;
+    }
+    */
+
+    .logo-stack {
+        position: absolute;
+        top: 50px;        /* controls vertical position */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        display: grid;
+        place-items: center; 
     }
 
     .logo-orbit {
