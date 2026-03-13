@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZAS Control Systems Integration</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0a0f14;
+color:#ffffff;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#0a0f14;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+z-index:1000;
+border-bottom:1px solid #1c2a36;
+}
+
+nav img{
+height:45px;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#29d3ff;
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+text-align:center;
+padding:120px 20px 40px 20px;
+}
+
+.hero img{
+width:220px;
+margin-bottom:30px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:650px;
+font-size:18px;
+color:#b7c5d3;
+}
+
+.btn{
+margin-top:30px;
+display:inline-block;
+padding:14px 28px;
+background:#29d3ff;
+color:#001018;
+border-radius:4px;
+font-weight:bold;
+text-decoration:none;
+}
+
+/* SECTION */
+
+section{
+padding:90px 10%;
+}
+
+.section-title{
+font-size:36px;
+margin-bottom:40px;
+text-align:center;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:30px;
+}
+
+.card{
+background:#111a23;
+padding:30px;
+border-radius:8px;
+transition:0.3s;
+border:1px solid #1c2a36;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:#29d3ff;
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+/* ABOUT */
+
+.about{
+max-width:800px;
+margin:auto;
+text-align:center;
+color:#b7c5d3;
+line-height:1.7;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.project{
+background:#111a23;
+padding:25px;
+border-radius:6px;
+border:1px solid #1c2a36;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.contact button{
+padding:14px 30px;
+border:none;
+background:#29d3ff;
+color:#001018;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+border-top:1px solid #1c2a36;
+color:#8fa4b8;
+font-size:14px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+.hero h1{
+font-size:34px;
+}
+
+nav ul{
+gap:15px;
+font-size:14px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+
+<nav>
+
+<img src="ZAS_trans_bg.png" alt="ZAS Logo">
+
+<ul>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<img src="ZAS_trans_bg.png">
+
+<h1>Control Systems Integration</h1>
+
+<p>
+Industrial automation, control architecture, and advanced systems integration for modern manufacturing and infrastructure.
+</p>
+
+<a class="btn" href="#contact">Get in Touch</a>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<h2 class="section-title">Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Industrial Automation</h3>
+<p>PLC programming, system architecture design, and automation deployment for industrial environments.</p>
+</div>
+
+<div class="card">
+<h3>Control Systems</h3>
+<p>Design and implementation of reliable control systems for complex operational processes.</p>
+</div>
+
+<div class="card">
+<h3>SCADA Integration</h3>
+<p>SCADA and HMI development enabling real-time monitoring and control.</p>
+</div>
+
+<div class="card">
+<h3>System Modernization</h3>
+<p>Upgrading legacy infrastructure to modern, scalable control architectures.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="section-title">About</h2>
+
+<div class="about">
+
+<p>
+ZAS specializes in control systems integration for industrial and technical environments. Our mission is to deliver reliable automation solutions that improve efficiency, scalability, and operational visibility.
+</p>
+
+<br>
+
+<p>
+We combine engineering expertise with modern software tools to design systems that are robust, maintainable, and future-ready.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Manufacturing Line Automation</h3>
+<p>PLC and SCADA deployment improving production throughput and monitoring.</p>
+</div>
+
+<div class="project">
+<h3>Water Treatment Control</h3>
+<p>Integrated control architecture with remote telemetry and automated alerts.</p>
+</div>
+
+<div class="project">
+<h3>Energy Infrastructure</h3>
+<p>Real-time monitoring and control for distributed energy systems.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact">
+
+<p>Interested in working together or learning more?</p>
+
+<br>
+
+<button onclick="sendEmail()">Contact Us</button>
+
+</div>
+
+</section>
+
+
+<footer>
+
+© 2026 ZAS Control Systems Integration
+
+</footer>
+
+
+<script>
+
+function sendEmail(){
+window.location.href = "mailto:contact@yourdomain.com";
+}
+
+</script>
+
+
+</body>
+</html>
